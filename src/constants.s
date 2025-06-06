@@ -13,6 +13,9 @@ PPU_OAMDMA = $4014 ; Sprite DMA Register
 APU_DM_CONTROL = $4010 ; APU Delta Modulation Control Register (Write)
 APU_CLOCK = $4015 ; APU Sound/Vertical Clock Signal Register (Read/Write)
 
+;cpu oam data
+CPU_OAM_PTR = $0200
+
 ; Joystick/Controller values
 JOYPAD1 = $4016 ; Joypad 1 (Read/Write)
 JOYPAD2 = $4017 ; Joypad 2 (Read/Write)
@@ -31,6 +34,7 @@ PAD_RIGHT  = $80
 NAME_TABLE_1 = $2000
 ATTR_TABLE_1 = $23C0
 NAME_TABLE_2 = $2400
+ATTR_TABLE_2 = $27C0
 
 
 ;WRAM
@@ -43,10 +47,4 @@ DISPLAY_SCREEN_WIDTH  = 32
 DISPLAY_SCREEN_HEIGHT = 30
 
 
-; Consts for Attribute rendering
-ATTR_BASE_OFFSET = 1
-ATTR_LINE_OFFSET = 2
-
-;cpu oam data
-CPU_OAM_PTR = $0200
 
